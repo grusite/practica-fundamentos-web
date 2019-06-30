@@ -12,7 +12,7 @@ La práctica consta de tres páginas estáticas:
 
 Cada una con sus estilos independientes, aunque el header y el footer lo comparten.
 
-# # Navbar
+# # # Navbar
 Tanto el logo de la diana como el enlace *Home* acceden al index.html.
 Los botones de *ENTRAR* y de *REGISTRARSE* acceden al login.html.
 
