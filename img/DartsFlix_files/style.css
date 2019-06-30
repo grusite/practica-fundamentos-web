@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar header */
+#navbar {
+  background-color: rgb(34, 33, 33, 0.8);
+  width: 100%;
+  position: fixed;
+  font-family: "Roboto Slab", serif;
+  max-height: 55px;
+}
+
+.logo {
+  float: left;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 10px;
+  width: 55px;
+}
+
+.left-menu {
+  float: left;
+  margin-top: 0.5rem;
+}
+
+.left-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-menu ul li {
+  display: inline-block;
+}
+
+.right-menu {
+  float: right;
+  margin-right: 10px;
+  margin-top: 0.5rem;
+}
+
+.right-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-menu ul li {
+  display: inline-block;
+}
+
+/* .search-icon {
+} */
+
+#sign-up {
+  background-color: #e56060;
+}
+
+#sign-up:hover {
+  color: rgb(34, 33, 33);
+}
+
+/* .login {
+  margin-bottom: 0.5rem;
+} */
+
+.navbar-item > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+}
+
+#search-link {
+  padding: 0;
+}
+
+.navbar-item > a:hover {
+  color: #e56060;
+}
+
+@media all and (max-width: 768px) {
+  #navbar {
+    background-color: rgb(34, 33, 33, 0.8);
+    font-family: "Roboto Slab", serif;
+  }
+
+  .logo {
+    float: left;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 5px;
+    width: 55px;
+    display: fixed;
+  }
+
+  .left-menu,
+  .right-menu {
+    float: none;
+    margin-top: 0.5rem;
+  }
+
+  .left-menu ul,
+  .right-menu ul {
+    list-style: none;
+  }
+
+  .left-menu ul li,
+  .right-menu ul li {
+    display: inline-block;
+  }
+
+  /* .right-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } */
+
+  /* .right-menu ul li {
+    display: inline-block;
+  } */
+
+  /* .search-icon {
+  } */
+
+  #sign-up {
+    background-color: #e56060;
+  }
+
+  #sign-up:hover {
+    color: rgb(34, 33, 33);
+  }
+
+  /* .login {
+    margin-bottom: 0.5rem;
+  } */
+
+  .navbar-item > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5rem;
+  }
+
+  #search-link {
+    display: none;
+  }
+
+  .navbar-item > a:hover {
+    color: #e56060;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Aquí van los estilos para iPad horizontal */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Aquí van los estilos para iPad vertical */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Aquí van los estilos para iPhone horizontal */
+}
+
+@media only screen and (max-width: 320px) {
+  /* Aquí van los estilos para iPhone vertical */
+}
+
+.main-header {
+  background-image: url(../img/darts-header.jpeg);
+  height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header > .video-description {
+  position: absolute;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  font-family: "B612 Mono", monospace;
+  color: white;
+  bottom: 0vh;
+  left: 47vw;
+}
+
+.video-description > h1 {
+  position: absolute;
+  bottom: 0vh;
+  left: 0vw;
+  font-size: 4em;
+}
+
+.video-description > .resume {
+  position: relative;
+  top: -17vh;
+  left: -0vw;
+  text-align: justify;
+  margin-right: 45px;
+  font-size: 2em;
+}
+
+@media all and (max-width: 768px) {
+  .main-header > .video-description {
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  }
+
+  .video-description > h1 {
+    position: relative;
+    top: 10vh;
+    left: 0vw;
+    font-size: 3em;
+  }
+
+  .video-description > .resume {
+    position: relative;
+    top: -17vh;
+    left: -0vw;
+    text-align: justify;
+    margin-right: 45px;
+    font-size: 2em;
+  }
+}
