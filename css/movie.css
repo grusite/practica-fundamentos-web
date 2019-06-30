@@ -236,6 +236,8 @@ header {
   flex-direction: column;
   align-items: center;
   color: white;
+  justify-content: center;
+  height: 350px;
 }
 
 hr {
@@ -257,10 +259,9 @@ hr {
   text-align: justify;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 480px) {
   .video-info {
-    justify-content: center;
-    height: 340px;
+    height: 400px;
   }
 }
 
