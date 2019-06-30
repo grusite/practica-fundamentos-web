@@ -13,11 +13,17 @@ body {
 }
 
 /* NAVBAR HEADER */
+
+header {
+  height: 60px;
+  background-color: rgb(34, 33, 33, 0.9);
+}
+
 .navbar {
   background-color: rgb(34, 33, 33, 0.9);
   width: 100%;
-  position: fixed;
   z-index: 10;
+  position: fixed;
   display: flex;
   top: 0;
   align-items: center;
@@ -27,7 +33,7 @@ body {
   border-radius: 50%;
   padding: 10px;
   margin-left: 10px;
-  width: 55px;
+  width: 56px;
 }
 
 .left-menu {
@@ -60,7 +66,6 @@ body {
 
 #user-icon {
   display: none;
-  width: 80px;
   margin: 0;
 }
 
@@ -88,14 +93,14 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  .navbar {
-    height: 5rem;
-    font-size: 1.3rem;
-    background-color: rgb(34, 33, 33);
+  header {
+    height: 55px;
   }
 
-  .logo img {
-    width: 60px;
+  .navbar {
+    height: 3.5rem;
+    font-size: 1.1rem;
+    background-color: rgb(34, 33, 33);
   }
 
   #categories,
@@ -145,7 +150,7 @@ body {
 /* MAIN HEADER */
 .main-header {
   background-image: url(../img/darts-header.jpeg);
-  height: 100vh;
+  height: 800px;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,13 +164,14 @@ body {
   font-weight: 100;
   color: white;
   bottom: 0vh;
-  left: 47vw;
+  left: 660px;
+  height: 100%;
 }
 
 .video-description > h1 {
   position: absolute;
-  bottom: 1vh;
-  left: 0vw;
+  bottom: 1rem;
+  left: 0;
   font-weight: 100;
   font-size: 4em;
   margin: 0;
@@ -173,8 +179,7 @@ body {
 
 .video-description > .resume {
   position: relative;
-  top: -22vh;
-  left: -0vw;
+  top: 31rem;
   text-align: justify;
   margin-right: 45px;
   font-size: 2rem;
@@ -183,7 +188,7 @@ body {
 .video-buttons {
   position: absolute;
   left: 30px;
-  bottom: 100px;
+  bottom: 1rem;
   padding: 5px;
 }
 
@@ -211,34 +216,73 @@ body {
   margin-left: 30px;
 }
 
+@media all and (max-width: 980px) {
+  .main-header {
+    height: 500px;
+  }
+
+  .main-header > .video-description {
+    left: 360px;
+  }
+
+  .video-description > h1 {
+    font-size: 3rem;
+  }
+
+  .video-description > .resume {
+    top: 20rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .main-header {
-    top: 5rem;
-    height: 450px;
+    height: 400px;
+  }
+
+  .main-header > .video-description {
+    left: 0;
+  }
+
+  .video-description > h1 {
+    margin-left: 10px;
+    font-size: 2.2rem;
+  }
+
+  .video-description > .resume {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    top: 17rem;
+  }
+  .video-buttons {
+    font-size: 0.9rem;
+    top: 7rem;
+  }
+  .video-buttons a {
+    padding: 0.4rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .main-header {
+    height: 250px;
   }
 
   .main-header > .video-description {
     position: relative;
-    left: 0vw;
   }
 
   .video-description > h1 {
-    position: relative;
-    top: 50vh;
-    margin-left: 10px;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    left: 15vw;
   }
 
   .video-description > .resume {
-    position: relative;
-    top: 30vh;
-    margin-right: 45px;
-    margin-left: 10px;
-    font-size: 1.5rem;
+    display: none;
   }
-
   .video-buttons {
-    top: 42vh;
+    top: 9rem;
+    left: 6rem;
   }
 }
 
@@ -423,13 +467,16 @@ h2 {
 
 @media all and (max-width: 768px) {
   .footer {
-    flex-direction: column;
-    text-align: center;
+    padding: 0;
+    /* flex-direction: column;
+    text-align: center; */
   }
 
   .links-list {
-    padding-left: 0;
+    /* padding-left: 0;
     flex-direction: column;
+    font-size: 0.6rem; */
+    display: none;
   }
 
   .social-list {

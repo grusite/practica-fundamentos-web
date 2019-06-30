@@ -13,6 +13,11 @@ body {
 }
 
 /* NAVBAR HEADER */
+header {
+  height: 60px;
+  background-color: rgb(34, 33, 33, 0.9);
+}
+
 .navbar {
   background-color: rgb(34, 33, 33, 0.9);
   width: 100%;
@@ -27,7 +32,7 @@ body {
   border-radius: 50%;
   padding: 10px;
   margin-left: 10px;
-  width: 55px;
+  width: 56px;
 }
 
 .left-menu {
@@ -60,7 +65,6 @@ body {
 
 #user-icon {
   display: none;
-  width: 80px;
   margin: 0;
 }
 
@@ -88,9 +92,13 @@ body {
 }
 
 @media all and (max-width: 768px) {
+  header {
+    height: 55px;
+  }
+
   .navbar {
-    height: 5rem;
-    font-size: 1.3rem;
+    height: 3.5rem;
+    font-size: 1.1rem;
     background-color: rgb(34, 33, 33);
   }
 
@@ -114,7 +122,7 @@ body {
 /* MAIN HEADER */
 .main-header {
   background-image: url(../img/darts-header.jpeg);
-  height: 80vh;
+  height: 700px;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,8 +134,7 @@ body {
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
   font-weight: 100;
   color: white;
-  width: 100%;
-  height: 100%;
+  height: 800px;
 }
 
 .video-description > h1 {
@@ -139,7 +146,11 @@ body {
   margin: 0;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 980px) {
+  .main-header {
+    height: 500px;
+  }
+
   .video-description > h1 {
     font-size: 3rem;
   }
@@ -147,22 +158,42 @@ body {
 
 @media all and (max-width: 768px) {
   .main-header {
-    top: 5rem;
-    height: 100%;
-    width: 100%;
+    height: 400px;
   }
 
   .main-header > .video-description {
-    position: relative;
-    left: 0vw;
+    left: 0;
   }
 
   .video-description > h1 {
     bottom: 0;
-    left: 0;
+    left: 20%;
     margin-left: 10px;
     font-size: 2rem;
     text-align: center;
+  }
+
+  .video-buttons {
+    font-size: 0.9rem;
+    top: 7rem;
+  }
+  .video-buttons a {
+    padding: 0.4rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .main-header {
+    height: 250px;
+  }
+
+  .video-description > h1 {
+    font-size: 1.5rem;
+  }
+
+  .video-buttons {
+    top: 9rem;
+    left: 6rem;
   }
 }
 
@@ -254,14 +285,16 @@ body {
 
 @media all and (max-width: 768px) {
   .footer {
-    flex-direction: column;
-    text-align: center;
+    padding: 0;
+    /* flex-direction: column;
+    text-align: center; */
   }
 
   .links-list {
-    padding-left: 0;
+    /* padding-left: 0;
     flex-direction: column;
-    font-size: 0.6rem;
+    font-size: 0.6rem; */
+    display: none;
   }
 
   .social-list {
