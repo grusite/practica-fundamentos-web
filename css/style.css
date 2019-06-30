@@ -179,7 +179,7 @@ header {
 
 .video-description > .resume {
   position: relative;
-  top: 31rem;
+  top: 33rem;
   text-align: justify;
   margin-right: 45px;
   font-size: 2rem;
@@ -203,17 +203,23 @@ header {
   color: rgb(34, 33, 33);
 }
 
-.video-buttons .play {
+.video-buttons .btn-play {
   background-color: #e56060;
   color: white;
   display: inline-block;
 }
 
-.video-buttons .my-list {
+.video-buttons .btn-my-list {
   background-color: #e56060;
   color: white;
   display: inline-block;
   margin-left: 30px;
+}
+
+@media all and (max-width: 1280px) {
+  .video-description > .resume {
+    top: 28rem;
+  }
 }
 
 @media all and (max-width: 980px) {
@@ -340,43 +346,121 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* MAIN MI LISTA */
+/* MAIN MI LISTA, SEGUIR VIENDO Y RECOMENDADO */
 
-.mi-lista {
-  margin-top: 50px;
-  position: relative;
+.my-list {
+  margin-top: 60px;
 }
 
-.mi-lista > h2 {
-  position: sticky;
-  margin: 0;
-  padding-left: 10px;
-}
-
-/* MAIN SEGUIR VIENDO */
-
-.seguir-viendo {
-  margin-top: 50px;
-  position: relative;
-}
-
-.seguir-viendo > h2 {
-  position: sticky;
-  margin: 0;
-  padding-left: 10px;
-}
-
-/* MAIN RECOMENDADOS */
-
+.keep-watching,
 .recommended {
   margin-top: 50px;
+}
+
+.my-list,
+.keep-watching,
+.recommended {
+  margin-bottom: 0;
   position: relative;
 }
 
+.my-list > h2,
+.keep-watching > h2,
 .recommended > h2 {
-  position: sticky;
   margin: 0;
   padding-left: 10px;
+}
+
+@media all and (max-width: 1280px) {
+  .my-list > h2,
+  .keep-watching > h2,
+  .recommended > h2 {
+    font-size: 1.3rem;
+  }
+
+  .item-carousel > img {
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .my-list {
+    margin-top: 55px;
+  }
+
+  .keep-watching,
+  .recommended {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .my-list > h2,
+  .keep-watching > h2,
+  .recommended > h2 {
+    font-size: 1.2rem;
+  }
+
+  .item-carousel > img {
+    width: 400px;
+    height: 220px;
+    padding: 10px;
+  }
+
+  .my-list {
+    margin-top: 50px;
+  }
+
+  .keep-watching,
+  .recommended {
+    margin-top: 35px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .my-list > h2,
+  .keep-watching > h2,
+  .recommended > h2 {
+    font-size: 1.1rem;
+  }
+
+  .item-carousel > img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .my-list {
+    margin-top: 45px;
+  }
+
+  .keep-watching,
+  .recommended {
+    margin-top: 30px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .my-list > h2,
+  .keep-watching > h2,
+  .recommended > h2 {
+    font-size: 1rem;
+  }
+
+  .item-carousel > img {
+    width: 280px;
+    height: 190px;
+    padding: 10px;
+  }
+
+  .my-list {
+    margin-top: 35px;
+  }
+
+  .keep-watching,
+  .recommended {
+    margin-top: 20px;
+  }
 }
 
 /* FOOTER */

@@ -139,7 +139,7 @@ header {
 
 .video-description > h1 {
   position: absolute;
-  bottom: 0vh;
+  bottom: 1rem;
   left: 25%;
   font-weight: 400;
   font-size: 4em;
@@ -203,7 +203,6 @@ header {
   }
 
   .video-description > h1 {
-    bottom: 0;
     font-size: 2rem;
   }
 
@@ -227,6 +226,41 @@ header {
   .video-buttons {
     left: 24vw;
     bottom: 4rem;
+  }
+}
+
+/* VIDEO-INFO */
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  padding: 0;
+  width: 80vw;
+}
+
+.video-info > h2 {
+  margin: 0.5rem;
+}
+
+.video-info > .synopsis {
+  margin: 1rem;
+  width: 80vw;
+  text-align: justify;
+}
+
+@media all and (max-width: 768px) {
+  .video-info {
+    justify-content: center;
+    height: 340px;
   }
 }
 
@@ -289,11 +323,6 @@ header {
   color: #e56060;
 }
 
-/* .links,
-.social {
-  flex: 1;
-} */
-
 .links-list {
   list-style: none;
   display: flex;
@@ -319,14 +348,12 @@ header {
 @media all and (max-width: 768px) {
   .footer {
     padding: 0;
-    /* flex-direction: column;
-    text-align: center; */
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
   }
 
   .links-list {
-    /* padding-left: 0;
-    flex-direction: column;
-    font-size: 0.6rem; */
     display: none;
   }
 
